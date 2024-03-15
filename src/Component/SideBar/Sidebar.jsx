@@ -9,7 +9,7 @@ const Sidebar = ({recipes}) => {
             <h4 className='text-2xl font-bold p-5 text-center border-b-2 border-gray-600'>Want to cook : {recipes.length} </h4>
                 <table className='table'>
                     <thead>
-                        <tr className=''>
+                        <tr>
                             <th>Name</th>
                             <th>Time</th>
                             <th>Calories</th>
@@ -24,6 +24,7 @@ const Sidebar = ({recipes}) => {
                     idx = {idx}>
                  </Select>)
             }
+            <h4 className='text-2xl font-bold p-5 text-center border-b-2 border-gray-600'>current Cooking : {recipes.length} </h4>
         </div>
     );
 };

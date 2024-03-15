@@ -5,6 +5,7 @@ import Header from './Component/Header/Header'
 import Recipes from './Component/Recipes/Recipes'
 import Sidebar from './Component/SideBar/Sidebar'
 
+
 function App() {
   const [recipes,setRecipes] = useState([])
 
@@ -14,7 +15,8 @@ function App() {
     if(!newRecipes){
       setRecipes([...recipes,recipe])
     }else{
-      alert('Already select')
+      
+      alert('already selected')
     }
   }
 

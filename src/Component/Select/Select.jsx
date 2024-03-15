@@ -2,23 +2,23 @@
 import PropTypes from 'prop-types';
 
 const Select = ({recipe,idx}) => {
-    
+    // {idx + 1}
+    // {name}
+    // {time.slice(0,2)}
+    // {calories.slice(0,3)}
     const {name,time,calories} = recipe
     return (
-        <div>
-             <div className="">
-                <table className="table">
-                    <tbody>
-                    <tr className='bg-purple-200'>
-                        <p>{idx + 1}</p>
-                        <td>{name}</td>
-                        <td>{time.slice(0,2)}<br /> min</td>
-                        <td className=''>{calories.slice(0,3)}<br /> calories</td>
-                        <button className='btn bg-[#0BE58A] border-none rounded-3xl mt-2'>Preparing</button>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div className='py-3'>
+            <table className='table'>
+                <tr className="bg-base-200">
+                    <th>{idx + 1}</th>
+                    <td>{name}</td>
+                    <td>{time.slice(0,2)}</td>
+                    <td>{calories.slice(0,3)}</td>
+                    <button className='btn bg-[#0BE58A]'>Preparing</button>
+                </tr>
+            </table>
+            
         </div>
     );
 };
