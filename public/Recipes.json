@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Mutton Fry",
+      "image": "https://i.ibb.co/XkLJVsr/mutton.jpg",
+      "description": "A delicious and easy mutton fry recipe.",
+      "ingredients": ["550 g mutton", "120 ml soy sauce", "200 g basil", "400 g mushrooms"],
+      "time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "id": 2,
+      "name": "Vegetable Salad",
+      "image": "https://i.ibb.co/HPkh10n/Vegetable-salad.jpg",
+      "description": "A healthy and colorful vegetable salad.",
+      "ingredients": ["300 g vegetable", "2 bell peppers", "1 zucchini", "1 onion", "2 tomatoes"],
+      "time": "25 min",
+      "calories": "250 calories"
+    },
+    {
+      "id": 3,
+      "name": "Grilled Salmon",
+      "image": "https://i.ibb.co/kgvJSYk/Grilled-Salmon.jpg",
+      "description": "A flavorful grilled salmon recipe.",
+      "ingredients": ["4 salmon", "1 lemon", "2 cloves garlic", "Salt taste"],
+      "time": "20 min",
+      "calories": "300 calories"
+    },
+    {
+      "id": 4,
+      "name": "Mutton Biryani",
+      "image": "https://i.ibb.co/RcMgfSS/mutton-biryani.jpg",
+      "description": "Basmati rice cooked with mutton pieces.",
+      "ingredients": ["200 g rice", "500 g mushrooms", "1 onion", "2 cloves garlic"],
+      "time": "35 min",
+      "calories": "280 calories"
+    },
+    {
+        "id": 1,
+        "name": "Turkey-food",
+        "image": "https://i.ibb.co/yYZ5KJQ/traditional-turkey-food.jpg",
+        "description": "A delicious and easy chicken turkey recipe.",
+        "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushrooms"],
+        "time": "30 min",
+        "calories": "320 calories"
+    },
+    {
+      "id": 6,
+      "name": "Noodles",
+      "image": "https://i.ibb.co/ryhPvbj/Noodles.jpg",
+      "description": "Homemade Noodles with a moist texture.",
+      "ingredients": ["1 noodles", "1 onion", "100 g sugar", "100 g butter", "100 tomatoes"],
+      "time": "15 min",
+      "calories": "220 calories"
+    }
+  ]
+  
