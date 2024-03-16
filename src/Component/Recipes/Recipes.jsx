@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Recipe from '../Recipe/Recipe';
 
 const Recipes = ({handelCook}) => {
-    // console.log(handelCurrentCook)
+    
     const [recipes,setRecipes] = useState([])
 
     useEffect(() => {

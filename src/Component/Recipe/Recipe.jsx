@@ -4,7 +4,6 @@ import { MdAccessTime } from "react-icons/md";
 import { AiOutlineFire } from "react-icons/ai";
 
 const Recipe = ({recipe,handelCook}) => {
-    
     const {image,name,description,ingredients,time,calories} = recipe
     return (
         <div className='border-2 m-5 p-5 space-y-3 rounded-xl w-[400px] '>
