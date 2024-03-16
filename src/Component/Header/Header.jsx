@@ -4,12 +4,12 @@ import banner from '../../assets/image/banner-img.jpg'
 
 const Header = () => {
     return (
-        <div className="container m-auto py-10">
+        <div className="container m-auto lg:py-10 p-5">
             <div className="navbar bg-base-100">
             <div className=" navbar-start">
-                <a className="btn btn-ghost text-2xl font-bold">North-Hotel</a>
+                <a className="btn btn-ghost lg:text-2xl text-xl font-bold">North-Hotel</a>
             </div>
-            <div className="navbar-center gap-16">
+            <div className="navbar-center gap-16 lg:flex hidden">
                 <ul><a>Home</a></ul>
                 <ul><a>Recipes</a></ul>
                 <ul><a>About</a></ul>
@@ -34,7 +34,7 @@ const Header = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="">
-                        <h1 className="mb-5 text-5xl font-bold">Discover an exceptional cooking <br /> class tailored for you!</h1>
+                        <h1 className="mb-5 lg:text-5xl text-xl font-bold">Discover an exceptional cooking <br /> class tailored for you!</h1>
                         <p className="mb-5">If you want to eat delicious, tasty food, come now.  We serve you delicious food according to your needs. <br /> Stay with us</p>
                         <button className="btn bg-[#0BE58A] border-none rounded-full">Explore Now</button>
                         <button className="btn btn-outline border-white ml-6 rounded-full text-white">Our Feedback</button>

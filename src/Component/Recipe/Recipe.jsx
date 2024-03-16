@@ -5,10 +5,11 @@ import { AiOutlineFire } from "react-icons/ai";
 
 const Recipe = ({recipe,handelCook}) => {
     const {image,name,description,ingredients,time,calories} = recipe
+    
     return (
         <div>
             
-            <div className='border-2 m-5 p-5 space-y-3 rounded-xl w-[400px] '>
+            <div className='border-2 m-5 p-5 space-y-3 rounded-xl lg:w-[400px] '>
                 <img className='rounded-xl h-80' src={image} alt="" />
                 <h1 className='text-xl font-bold'>{name}</h1>
                 <p className='border-b-2 border-gray-300 pb-8'>{description}</p>
@@ -36,8 +37,8 @@ const Recipe = ({recipe,handelCook}) => {
 };
 
 Recipe.propTypes = {
-    recipe:PropTypes.object,
-    handelCook:PropTypes.func
+    recipe:PropTypes.object.isRequired,
+    handelCook:PropTypes.func.isRequired
 };
 
 export default Recipe;

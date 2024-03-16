@@ -13,7 +13,7 @@ const Recipes = ({handelCook}) => {
     },[])
 
     return (
-        <div className='grid grid-cols-2'>
+        <div className='grid lg:grid-cols-2'>
             {
                 recipes.map((recipe,idx) => 
                 <Recipe 

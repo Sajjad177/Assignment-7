@@ -34,7 +34,6 @@ function App() {
       setTotalCalories(totalCalories + parseInt(calories.slice(0,3)))
 
       const isExist = recipes.filter((item => item.id != id))
-      // console.log(isExist)
       setRecipes(isExist)
       setPreparing(cookMaking)
   }
@@ -42,7 +41,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className='container m-auto flex justify-between mb-20 gap-5'>
+      <div className='container m-auto flex lg:flex-row flex-col justify-between mb-20 gap-5'>
         <Recipes
           handelCook={handelCook} 
           >
