@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
 const FoodPreparing = ({cooked}) => {
-    // console.log(cooked)
+
     const {name,time,calories} = cooked
     return (
         <div className='my-5'>

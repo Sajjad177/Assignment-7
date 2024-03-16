@@ -11,7 +11,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [recipes,setRecipes] = useState([])
-  // const [preparing,setPreparing] = useState([])
 
   const handelCook = (recipe) =>{
     const newRecipes = recipes.find((recipeId => recipeId.id === recipe.id))
@@ -22,13 +21,6 @@ function App() {
       toast('Already Selected')   
     }
   }
-
-  // const handelPreparing = (cook) =>{
-  //  console.log('clicked')
-  // //  console.log(cook)
-  //     const  newCooking = [...preparing,cook] 
-  //     setPreparing(newCooking)
-  // }
 
 
 
@@ -41,10 +33,7 @@ function App() {
           >
         </Recipes>
         <Sidebar
-          // currentCook = {currentCook}
           recipes ={recipes}
-          // preparing = {preparing}
-          // handelPreparing={handelPreparing}
           >
         </Sidebar>
         
