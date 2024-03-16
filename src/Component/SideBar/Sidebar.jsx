@@ -2,8 +2,9 @@
 import PropTypes from 'prop-types';
 import Select from '../Select/Select';
 
-const Sidebar = ({recipes}) => {
+const Sidebar = ({recipes,handelPreparing}) => {
     // console.log(recipes)
+    // console.log(handelCurrentCook)
     return (
         <div className='bg-gray-500 w-[35vw] p-5 rounded-xl my-5'>
             <h4 className='text-2xl font-bold p-5 text-center border-b-2 border-gray-600'>Want to cook : {recipes.length} </h4>
@@ -21,16 +22,19 @@ const Sidebar = ({recipes}) => {
                  <Select
                     key={idx}
                     recipe = {recipe}
-                    idx = {idx}>
+                    idx = {idx}
+                    handelPreparing= {handelPreparing}
+                    >
                  </Select>)
             }
-            <h4 className='text-2xl font-bold p-5 text-center border-b-2 border-gray-600'>current Cooking : {recipes.length} </h4>
+            <h4 className='text-2xl font-bold p-5 text-center border-b-2 border-gray-600'>current Cooking : {} </h4>
         </div>
     );
 };
 
 Sidebar.propTypes = {
-    recipes:PropTypes.object.isRequired
+    recipes:PropTypes.object.isRequired,
+    handelPreparing:PropTypes.func
 };
 
 export default Sidebar;

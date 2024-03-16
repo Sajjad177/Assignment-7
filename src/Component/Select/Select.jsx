@@ -1,11 +1,8 @@
 
 import PropTypes from 'prop-types';
 
-const Select = ({recipe,idx}) => {
-    // {idx + 1}
-    // {name}
-    // {time.slice(0,2)}
-    // {calories.slice(0,3)}
+const Select = ({recipe,idx,handelPreparing}) => {
+    // console.log(recipe)
     const {name,time,calories} = recipe
     return (
         <div className='py-3'>
@@ -15,7 +12,7 @@ const Select = ({recipe,idx}) => {
                     <td>{name}</td>
                     <td>{time.slice(0,2)}</td>
                     <td>{calories.slice(0,3)}</td>
-                    <button className='btn bg-[#0BE58A]'>Preparing</button>
+                    <button onClick={()=>handelPreparing(recipe.id)} className='btn bg-[#0BE58A]'>Preparing</button>
                 </tr>
             </table>
             
@@ -25,7 +22,8 @@ const Select = ({recipe,idx}) => {
 
 Select.propTypes = {
     recipe:PropTypes.array.isRequired,
-    idx:PropTypes.number.isRequired
+    idx:PropTypes.number.isRequired,
+    handelPreparing:PropTypes.func
 };
 
 export default Select;
