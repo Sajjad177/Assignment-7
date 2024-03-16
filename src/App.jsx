@@ -11,6 +11,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [recipes,setRecipes] = useState([])
+  const [preparing,setPreparing] = useState([])
+  const [totalTime,setTotalTime] = useState(0)
+  const [totalCalories,setTotalCalories] = useState(0)
 
   const handelCook = (recipe) =>{
     const newRecipes = recipes.find((recipeId => recipeId.id === recipe.id))
@@ -22,7 +25,19 @@ function App() {
     }
   }
 
+  const handelPreparing = (cook,time,calories,id) => {
+            
+      console.log('your id is',id)
 
+      const cookMaking = [...preparing,cook]
+      setTotalTime(totalTime + parseInt(time.slice(0,2)))
+      setTotalCalories(totalCalories + parseInt(calories.slice(0,3)))
+
+      const isExist = recipes.filter((item => item.id != id))
+      // console.log(isExist)
+      setRecipes(isExist)
+      setPreparing(cookMaking)
+  }
 
   return (
     <>
@@ -32,9 +47,13 @@ function App() {
           handelCook={handelCook} 
           >
         </Recipes>
+
         <Sidebar
           recipes ={recipes}
-          >
+          preparing={preparing}
+          handelPreparing={handelPreparing} 
+          totalTime={totalTime}
+          totalCalories={totalCalories}>
         </Sidebar>
         
         <ToastContainer />
