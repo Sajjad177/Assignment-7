@@ -7,7 +7,7 @@ const FoodPreparing = ({cooked,idx}) => {
         <div className='my-5'>
             
             <div className='overflow-x-auto bg-base-200 flex items-center'>
-                <th className='w-1 p-2 lg:flex hidden'>{idx + 1}</th>
+                <p className='w-1 p-2 lg:flex hidden'>{idx + 1}</p>
                 <table className='table'>
                     <tbody>
                         <tr>

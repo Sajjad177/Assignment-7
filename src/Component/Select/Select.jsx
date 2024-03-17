@@ -1,13 +1,11 @@
-
 import PropTypes from 'prop-types';
-
 
 const Select = ({recipe,idx,handelPreparing}) => {
     const {name,time,calories} = recipe
     return (
         <div className=''>
             <div className='flex lg:flex-row flex-col items-center bg-base-200 my-4 justify-center'>
-                <th className='w-1 p-2 lg:flex hidden'>{idx + 1}</th>
+                <p className='w-1 p-2 lg:flex hidden'>{idx + 1}</p>
                 <table className='table flex items-center justify-center'>
                 
                     <tbody>

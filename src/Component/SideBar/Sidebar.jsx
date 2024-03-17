@@ -1,8 +1,6 @@
-
 import PropTypes from 'prop-types';
 import Select from '../Select/Select';
 import FoodPreparing from "../FoodPreparing/FoodPreparing"
-
 
 const Sidebar = ({recipes,preparing,handelPreparing,totalTime,totalCalories}) => {
     
@@ -62,10 +60,9 @@ const Sidebar = ({recipes,preparing,handelPreparing,totalTime,totalCalories}) =>
 };
 
 Sidebar.propTypes = {
-    recipes:PropTypes.array.isRequired,
+    recipes:PropTypes.array,
     preparing:PropTypes.array.isRequired,
     handelPreparing:PropTypes.func,
-    // currentCook:PropTypes.func,
     totalTime:PropTypes.number,
     totalCalories:PropTypes.number
 };

@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import './App.css'
 import Header from './Component/Header/Header'
@@ -6,7 +5,6 @@ import Recipes from './Component/Recipes/Recipes'
 import Sidebar from './Component/SideBar/Sidebar'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 
 
 function App() {
@@ -26,13 +24,9 @@ function App() {
   }
 
   const handelPreparing = (cook,time,calories,id) => {
-            
-      console.log('your id is',id)
-
       const cookMaking = [...preparing,cook]
       setTotalTime(totalTime + parseInt(time.slice(0,2)))
       setTotalCalories(totalCalories + parseInt(calories.slice(0,3)))
-
       const isExist = recipes.filter((item => item.id != id))
       setRecipes(isExist)
       setPreparing(cookMaking)
@@ -46,7 +40,6 @@ function App() {
           handelCook={handelCook} 
           >
         </Recipes>
-
         <Sidebar
           recipes ={recipes}
           preparing={preparing}
@@ -54,9 +47,7 @@ function App() {
           totalTime={totalTime}
           totalCalories={totalCalories}>
         </Sidebar>
-        
         <ToastContainer />
-        
       </div>
     </>
   )

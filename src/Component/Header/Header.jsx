@@ -1,7 +1,6 @@
 import { CgProfile } from "react-icons/cg";
 import banner from '../../assets/image/banner-img.jpg'
 
-
 const Header = () => {
     return (
         <div className="container m-auto lg:py-10 p-5">
@@ -26,8 +25,6 @@ const Header = () => {
                 </div>
             </div>
             </div>
-
-            
 
             <div className="hero mt-10 rounded-xl">
                 <img className="w-full rounded-xl h-[75vh]" src={banner} alt="" />
