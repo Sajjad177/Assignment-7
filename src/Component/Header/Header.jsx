@@ -38,7 +38,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <h3 className="text-4xl text-center mt-20 font-bold">Our Recipes</h3>
+            <h3 className="text-4xl text-center lg:mt-20 mt-10 font-bold">Our Recipes</h3>
             <h6 className="text-center my-5">Choose your fun, delicious food that soothes you.  We have a variety of food.Enjoy your day.</h6>
         </div>
         
