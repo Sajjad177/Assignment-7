@@ -5,9 +5,9 @@ import FoodPreparing from "../FoodPreparing/FoodPreparing"
 
 
 const Sidebar = ({recipes,preparing,handelPreparing,totalTime,totalCalories}) => {
-    console.log(typeof handelPreparing)
+    
     return (
-        <div className=' lg:w-[35vw] lg:p-5 lg:m-0 m-3 rounded-xl my-5 border-2 border-gray-500'>
+        <div className='lg:w-[35vw] lg:p-5 m-3 rounded-xl my-5 border-2 '>
             <h4 className='text-2xl font-bold p-5 text-center border-b-2 border-gray-600'>Want to cook : {recipes.length} </h4>
                 <div className='overflow-x-auto'>
                     <table className='table'>

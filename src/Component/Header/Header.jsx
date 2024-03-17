@@ -15,7 +15,7 @@ const Header = () => {
                 <ul><a>About</a></ul>
                 <ul><a>Search</a></ul>
             </div>
-            <div className="gap-2 navbar-end">
+            <div className="lg:gap-10 gap-3 navbar-end">
                 <div className="form-control">
                     <input type="text"  placeholder="Search" className="input input-bordered w-24 md:w-auto rounded-3xl" />
                 </div>
@@ -27,22 +27,22 @@ const Header = () => {
             </div>
             </div>
 
-            {/* banner section  */}
+            
 
             <div className="hero mt-10 rounded-xl">
                 <img className="w-full rounded-xl h-[75vh]" src={banner} alt="" />
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
-                    <div className="">
+                <div className="hero-content text-neutral-content">
+                    <div className="lg:space-y-6">
                         <h1 className="mb-5 lg:text-5xl text-xl font-bold">Discover an exceptional cooking <br /> class tailored for you!</h1>
-                        <p className="mb-5">If you want to eat delicious, tasty food, come now.  We serve you delicious food according to your needs. <br /> Stay with us</p>
+                        <p className="mb-5">If you want to eat delicious, tasty food, come now.  We serve you delicious food according to your needs. <br />You also learn how to make food. Stay with us</p>
                         <button className="btn bg-[#0BE58A] border-none rounded-full">Explore Now</button>
                         <button className="btn btn-outline border-white ml-6 rounded-full text-white">Our Feedback</button>
                     </div>
                 </div>
             </div>
             <h3 className="text-4xl text-center mt-20 font-bold">Our Recipes</h3>
-            <h6 className="text-center my-5">Choose your fun, delicious food that soothes you.  We have a variety of food. <br />  Enjoy your day.</h6>
+            <h6 className="text-center my-5">Choose your fun, delicious food that soothes you.  We have a variety of food.Enjoy your day.</h6>
         </div>
         
     );
